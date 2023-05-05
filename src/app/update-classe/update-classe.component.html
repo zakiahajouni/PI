@@ -1,0 +1,29 @@
+<div class="container">
+    <div>
+    <h2>Modifier une classe :</h2>
+    </div>
+    <form >
+    <div class="col-sm-2 col-md-2 col-lg-2">
+    <label >ID Classe</label>
+    <input type="text" [(ngModel)]="currentClasse.idClasse"
+    name="idClasse" class="form-control">
+    </div>
+    <div class="col-sm-4 col-md-4 col-lg-4" >
+    <label >numClasse</label>
+    <input type="text"[(ngModel)]= "currentClasse.numClasse"
+    name="numClasse" class="form-control">
+    </div>
+    <div class="col-sm-2 col-md-2 col-lg-2">
+    <label >nbmaxEnfant</label>
+    <input type="number" [(ngModel)]= "currentClasse.nbmaxEnfant"
+    name="nbmaxEnfant" class="form-control">
+    </div>
+    <div class="col-sm-2 col-md-2 col-lg-2">
+        <label >Salle</label>
+        <input type="text" [(ngModel)]= "currentClasse.salle" name="salle" class="form-control">
+        </div>
+<div class="mt-2">
+<button type="submit" (click)="updateClasse()" class="btn btn-success">Modifer</button>
+</div>
+</form>
+</div>
